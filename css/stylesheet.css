@@ -1,0 +1,906 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+* {
+    box-sizing: border-box
+}
+
+a {
+    text-decoration: none
+}
+
+* {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: white
+}
+
+p {
+    font-size: 18px;
+    color: #404040;
+    font-weight: 400;
+    margin-bottom: 16px
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: 600;
+    letter-spacing: -3px
+}
+
+h1 span {
+    color: white;
+    font-weight: 300
+}
+
+h2 {
+    font-size: 52px;
+    font-weight: 600
+}
+
+h2 span {
+    color: white;
+    font-weight: 300
+}
+
+h3 {
+    font-size: 28px;
+    color: #404040;
+    font-weight: 600;
+    margin-bottom: 10px
+}
+
+h4 {
+    font-size: 18px;
+    color: #6b6b6b;
+    font-weight: 300;
+    margin-bottom: 12px
+}
+
+h5 {
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 300;
+    margin-bottom: 50px
+}
+
+h6 {
+    font-size: 28px;
+    color: #404040;
+    font-weight: 600
+}
+
+.open-modal {
+    margin-top: 10px;
+    cursor: pointer
+}
+
+span {
+    color: #404040;
+    font-weight: 300
+}
+
+a {
+    font-size: 18px;
+    color: #6b6b6b;
+    font-weight: 300;
+    margin-bottom: 12px;
+    text-decoration: underline
+}
+
+a:hover {
+    text-decoration: underline;
+    -webkit-text-decoration-color: rgba(107, 107, 107, 0.5);
+    -moz-text-decoration-color: rgba(107, 107, 107, 0.5);
+    text-decoration-color: rgba(107, 107, 107, 0.5)
+}
+
+.center {
+    text-align: center
+}
+
+i {
+    color: #6b6b6b;
+    font-size: 62px
+}
+
+.logo p {
+    margin-top: 8px
+}
+
+.social li {
+    color: #6b6b6b
+}
+
+.button,
+.button:hover {
+    background-color: rgba(67, 119, 198, 0.7);
+    font-family: "Helvetica Neue";
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    float: right;
+    margin-top: 12px;
+    text-decoration: none;
+    padding: 6px 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease
+}
+
+.button:hover {
+    background-color: #4377c6
+}
+
+.outline {
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid white;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 20px;
+    border-radius: 0px;
+    transition: all 0.5s ease
+}
+
+.outline.active,
+.outline:active,
+.outline:focus,
+.outline:hover,
+.outline.active,
+.open {
+    background: rgba(0, 0, 0, 0.2);
+    text-decoration: none
+}
+
+body {
+    background-color: #fff
+}
+
+.hidden {
+    display: none
+}
+
+.header-content {
+    background: url("../images/hero-img.jpg") no-repeat;
+    background-size: 100%;
+    height: 43vw;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.header-text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 90%;
+    align-self: center
+}
+
+.container {
+    max-width: 1250px;
+    padding: 0 10px;
+    margin: 30px auto 50px
+}
+
+.inner {
+    width: 100%;
+    margin-top: 40px;
+    display: inline-block
+}
+
+.portfolio-card {
+    width: 100%;
+    height: 813px;
+    line-height: 1.4;
+    margin-bottom: 50px
+}
+
+.portfolio-text {
+    padding: 72px;
+    width: 450px
+}
+
+.portfolio-text a,
+.portfolio-text h6 {
+    font-size: 22px;
+    color: #0a0a0a;
+    font-weight: 400;
+    margin-bottom: 12px;
+    text-decoration: none
+}
+
+.portfolio-text h6 {
+    font-size: 20px
+}
+
+.portfolio-text .link-out {
+    font-size: 16px;
+    color: #0a0a0a;
+    font-weight: 400;
+    text-decoration: underline
+}
+
+.portfolio-text span {
+    color: #404040
+}
+
+#vy-local {
+    background: url("../images/desktop.png") right bottom no-repeat, linear-gradient(#F9F9F9 2%, #CFD5DA 95%), radial-gradient(33% 100%, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0.2) 100%)
+}
+
+#vy-local a:hover {
+    text-decoration: underline
+}
+
+#growthitude {
+    background: url("../images/growthitude.png") top center no-repeat, linear-gradient(-180deg, #151921 0%, #343643 97%);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #151921
+}
+
+#growthitude a,
+#growthitude h6 {
+    color: white
+}
+
+#growthitude a:hover {
+    text-decoration: underline
+}
+
+#growthitude span {
+    color: #a7a9ad
+}
+
+#amazon {
+    background: url("../images/amazon.png") top no-repeat, linear-gradient(#F9F9F9 2%, #CFD5DA 95%), radial-gradient(33% 100%, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0.2) 100%);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #eeefee
+}
+
+#amazon a,
+#amazon h6 {
+    color: #0a0a0a
+}
+
+#amazon span {
+    color: #404040
+}
+
+#amazon a:hover {
+    text-decoration: underline
+}
+
+#projects {
+    background: url("../images/projects.png") top center no-repeat, linear-gradient(-180deg, #151921 0%, #343643 97%);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #eeefee
+}
+
+#projects a,
+#projects h6 {
+    color: white
+}
+
+#projects a:hover {
+    text-decoration: underline
+}
+
+#projects span {
+    color: #a7a9ad
+}
+
+#about {
+    background: url("../images/about12.jpg") top right no-repeat;
+    background-size: cover;
+    height: auto
+}
+
+#about a,
+#about h3 {
+    color: #0a0a0a;
+    padding-bottom: 6px
+}
+
+#about a:hover {
+    color: #404040
+}
+
+#about p {
+    color: #060606;
+    font-weight: 200;
+    line-height: 1.5;
+    font-size: 16px
+}
+
+.about-text {
+    width: 550px;
+    height: auto;
+    padding: 80px 20px
+}
+
+.flex-skills {
+    display: flex
+}
+
+.skills {
+    padding-bottom: 40px
+}
+
+.skills-left {
+    width: 750px;
+    margin: 36px
+}
+
+.skills-left p {
+    font-weight: 200;
+    line-height: 1.5;
+    font-size: 16px
+}
+
+.skills-right {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 10px 20px
+}
+
+.skills-right p {
+    font-size: 14px
+}
+
+.skills-right .logo {
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px
+}
+
+.skills-right svg {
+    width: 62px;
+    padding-bottom: 3px
+}
+
+.logo-skills {
+    text-align: center
+}
+
+hr {
+    opacity: 0.4
+}
+
+.email {
+    width: 330px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center
+}
+
+.email a {
+    font-size: 18px;
+    line-height: 22px
+}
+
+.fa {
+    padding: 10px
+}
+
+footer {
+    margin-top: 100px
+}
+
+.logo-bottom {
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.logo-bottom img {
+    width: 60px
+}
+
+.social {
+    padding: 20px 0 20px 50px;
+    width: 100%;
+    text-align: center
+}
+
+.social li {
+    display: inline;
+    font-weight: 200;
+    padding: 15px
+}
+
+.social a,
+.social li {
+    font-size: 14px
+}
+
+.modal {
+    position: fixed;
+    z-index: 100;
+    display: none
+}
+
+.modal.closed {
+    display: flex
+}
+
+.modal-bg {
+    position: inherit;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: black;
+    opacity: 0.85;
+    z-index: 101
+}
+
+.close-button {
+    position: inherit;
+    top: 16px;
+    right: 20px;
+    z-index: 102
+}
+
+.modal-main {
+    position: inherit;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 102;
+    max-width: 100vw;
+    max-height: 100vh;
+    padding: 20px 20px 0
+}
+
+.modal-main h3 {
+    margin-bottom: 26px;
+    text-align: center
+}
+
+.modal-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+.modal-images img {
+    transition: all 0.5s ease;
+    box-shadow: 0 4px 8px 0 #6b6b6b;
+    margin-bottom: 20px
+}
+
+.modal-images img:hover {
+    transform: scale(1.04)
+}
+
+#modal-content {
+    width: 90%;
+    padding: 20px 10px;
+    margin-bottom: 10px
+}
+
+#modal-content p {
+    font-weight: 200;
+    line-height: 1.2;
+    font-size: 18px
+}
+
+.modal-links {
+    margin-top: 38px
+}
+
+.hidden {
+    display: none
+}
+
+.visible {
+    display: block
+}
+
+@media only screen and (max-width: 1500px) {
+    .modal-images img {
+        width: 280px
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .modal-images .img {
+        display: none
+    }
+    .modal-images .hidden {
+        display: block
+    }
+    #modal-content {
+        width: 100%;
+        padding: 20px 5px
+    }
+    #modal-content p {
+        line-height: 1.1;
+        font-size: 16px
+    }
+    #modal-content a {
+        line-height: 1.6;
+        font-size: 16px
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .header-content {
+        height: 63vw
+    }
+    .header-text h1 {
+        font-size: 3rem
+    }
+    h2 {
+        font-size: 52px
+    }
+    #about {
+        background: none;
+        background-color: #f5f5f5
+    }
+    .about-text {
+        width: 100%;
+        padding: 80px 30px 60px
+    }
+    .flex-skills {
+        display: block
+    }
+    .skills-left {
+        width: 100%;
+        margin: 0;
+        padding-bottom: 40px
+    }
+    .skills-left p {
+        font-size: 16px;
+        font-weight: 200;
+        line-height: 1.3
+    }
+    .skills .container {
+        padding: 0 30px
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .logo-top {
+        padding: 10px 0 0 23px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none
+    }
+    .logo-top img {
+        width: 120px
+    }
+    .button {
+        display: none
+    }
+    h3 {
+        font-size: 18px
+    }
+    .container {
+        padding: 0
+    }
+    .inner {
+        padding: 0 20px
+    }
+    .portfolio-text {
+        padding: 20px;
+        width: 100%
+    }
+    .portfolio-text a,
+    .portfolio-text h6,
+    .portfolio-text span {
+        font-size: 18px;
+        font-weight: 200
+    }
+    .portfolio-card {
+        width: 100%;
+        height: 130vw
+    }
+    #vy-local {
+        background: url("../images/desktop-small.png") bottom center no-repeat;
+        background-color: #eeefee;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain
+    }
+    #growthitude {
+        background: url("../images/growthitude-small.png") bottom center no-repeat;
+        background-color: #151921;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain
+    }
+    #amazon {
+        background: url("../images/amazon-small.png") bottom center no-repeat;
+        background-color: #eeefee;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain
+    }
+    #projects {
+        background: url("../images/projects-small.png") bottom center no-repeat;
+        background-color: #151921;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .header-content {
+        height: 66vw
+    }
+    .header-text h1 {
+        font-size: 2.5rem
+    }
+    .portfolio-card {
+        margin-bottom: 0
+    }
+    .social {
+        padding: 20px 20px;
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: center
+    }
+    .social li {
+        display: inline;
+        font-weight: 200;
+        padding: 15px
+    }
+    .social a,
+    .social li {
+        font-size: 14px
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .header-content {
+        height: 65vw
+    }
+    .header-text h1 {
+        font-size: 2.2rem
+    }
+    h2 {
+        font-size: 10vw
+    }
+    h5,
+    a {
+        font-size: 16px;
+        line-height: 20px
+    }
+    .outline {
+        font-size: 12px;
+        padding: 10px 20px
+    }
+    #about h3 {
+        padding-bottom: 6px
+    }
+    #about a:hover {
+        -webkit-text-decoration-color: #c7c7c7;
+        -moz-text-decoration-color: #c7c7c7;
+        text-decoration-color: #c7c7c7
+    }
+    #about p {
+        font-weight: 200;
+        line-height: 1.4;
+        font-size: 16px
+    }
+    .email {
+        padding: 0 50px;
+        width: 100%
+    }
+    .email p,
+    .email a {
+        font-size: 14px
+    }
+    .close-button {
+        width: 14px;
+        height: auto
+    }
+    .modal-main {
+        max-width: 80vw;
+        max-height: 90vh;
+        padding: 18px 20px 0
+    }
+    .modal-main h3 {
+        margin-bottom: 16px
+    }
+    .modal-images img {
+        width: 240px;
+        margin-bottom: 12px
+    }
+    #modal-content {
+        width: 100%;
+        padding: 10px 0;
+        margin-bottom: 8px
+    }
+    #modal-content p {
+        line-height: 1;
+        font-size: 14px
+    }
+}
+
+@media only screen and (max-width: 455px) {
+    .header-content {
+        height: 66vw
+    }
+    .header-text h1 {
+        font-size: 2rem
+    }
+    .header-text h5 {
+        font-size: 16px
+    }
+    .portfolio-text a,
+    h6 {
+        font-size: 16px;
+        line-height: 1.3
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .header-text h1 {
+        font-size: 1.7rem
+    }
+    .portfolio-text a,
+    h6 {
+        font-size: 14px;
+        line-height: 1.2
+    }
+    .email {
+        padding: 0 30px
+    }
+}
