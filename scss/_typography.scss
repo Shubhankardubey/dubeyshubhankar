@@ -1,0 +1,124 @@
+* {
+    text-rendering:  optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:  grayscale;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+p {
+    font-size:     18px;
+    color:     $grey-64;
+    font-weight:    400;
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-size:     52px;
+    font-weight:    600;
+    letter-spacing: -3px;
+
+    span {
+        color:     white;
+        font-weight: 300;
+    }
+}
+
+
+h2 {
+    font-size:     52px;
+    font-weight:    600;
+
+    span {
+        color:     white;
+        font-weight: 300;
+    }
+}
+
+h3 {
+    font-size:     28px;
+    color:     $grey-64;
+    font-weight:    600;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size:     18px;
+    color:    $grey-107;
+    font-weight:    300;
+    margin-bottom: 12px;
+}
+
+h5 {
+    font-size:     24px;
+    line-height:   26px;
+    font-weight:    300;
+    margin-bottom: 50px;
+}
+
+h6 {
+    font-size:     28px;
+    color:     $grey-64;
+    font-weight:    600;
+}
+
+.open-modal {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+span {
+    color:     $grey-64;
+    font-weight:    300;
+}
+
+a {
+    font-size:            18px;
+    color:           $grey-107;
+    font-weight:           300;
+    margin-bottom:        12px;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+    -webkit-text-decoration-color: rgba($grey-107, .5);
+    -moz-text-decoration-color:    rgba($grey-107, .5);
+    text-decoration-color:         rgba($grey-107, .5);
+}
+
+.center {text-align: center}
+
+i {
+    color: $grey-107;
+    font-size: 62px;
+}
+
+.logo p {
+    margin-top: 8px;
+    }
+
+.social li {color: $grey-107;}
+
+.button, .button:hover {
+  background-color: rgba($brand, 0.7);
+  font-family:       "Helvetica Neue";
+  font-size:   20px;
+  font-weight:  400;
+  color:      white;
+  float:      right;
+  margin-top:  12px;
+  text-decoration:   none;
+  padding:       6px 20px;
+  border: 2px solid white;
+  border-radius:     50px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition:    all 0.5s ease;
+  -o-transition:      all 0.5s ease;
+  transition:         all 0.5s ease;
+}
+
+.button:hover {background-color: $brand;}

@@ -1,0 +1,22 @@
+
+.outline {
+    border:              none;
+    text-decoration:     none;
+    color:               #fff;
+    border:   2px solid white;
+    font-size:           16px;
+    font-weight:          400;
+    padding:        10px 20px;
+    border-radius:        0px;
+    transition: all 0.5s ease;
+}
+
+.outline.active,
+.outline:active,
+.outline:focus,
+.outline:hover,
+.outline.active,
+.open {
+    background: rgba(0, 0, 0, 0.2);
+    text-decoration:          none;
+}

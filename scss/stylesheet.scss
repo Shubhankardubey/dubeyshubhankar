@@ -1,0 +1,350 @@
+@import "normalise";
+@import "colors";
+@import "typography";
+@import "buttons";
+
+
+/*
+
+------ CONTENTS ------
+
+ 25 - HEADER SECTION
+ 48 - PORTFOLIO SECTION
+125 - ABOUT SECTION
+158 - SKILLS SECTION
+196 - CONTACT SECTION
+214 - FOOTER SECTION
+
+*/
+
+
+body {background-color: $background;}
+
+
+// ----- HEADER SECTION ----- //
+
+
+.hidden {display: none;}
+
+.header-content {
+    background: url('../images/hero-img.jpg') no-repeat;
+    background-size:  100%;
+    height:            43vw;
+    display:           flex;
+    align-items:     center;
+    justify-content: center;
+}
+
+
+.header-text {
+      margin-left:     auto;
+      margin-right:    auto;
+      text-align:    center;
+      max-width:        90%;
+      align-self:    center;
+}
+
+
+// ----- PORTFOLIO SECTION ----- //
+
+.container {
+    max-width:      1250px;
+    padding:        0 10px;
+    margin: 30px auto 50px;
+}
+
+.inner {
+    width:           100%;
+    margin-top:      40px;
+    display: inline-block;
+}
+
+.portfolio-card {
+    width:         100%;
+    height:       813px;
+    line-height:    1.4;
+    margin-bottom: 50px;
+}
+
+.portfolio-text {
+    padding: 72px;
+    width:  450px;
+
+   a, h6 {
+        font-size:       22px;
+        color:       $grey-10;
+        font-weight:      400;
+        margin-bottom: 12px;
+        text-decoration: none;
+        }
+        h6 {
+        font-size:       20px;
+        }
+    
+    .link-out {
+        font-size:       16px;
+        color:       $grey-10;
+        font-weight:      400;
+        text-decoration: underline;
+    }
+
+    span { color: $grey-64;}
+}
+
+#vy-local {
+    background: url('../images/desktop.png') right bottom no-repeat, linear-gradient(#F9F9F9 2%, #CFD5DA 95%),
+    radial-gradient(33% 100%, rgba(255,255,255,0.70) 0%, rgba(0,0,0,0.20) 100%);
+
+    a:hover {text-decoration: underline}
+}
+
+#growthitude {
+    background: url('../images/growthitude.png') top center no-repeat, linear-gradient(-180deg, #151921 0%, #343643 97%);
+    -webkit-background-size: cover;
+    -moz-background-size:    cover;
+    -o-background-size:      cover;
+    background-size:         cover;
+    background-color: $background-growth;
+
+    a, h6 {color: white;}
+    
+    a:hover {text-decoration: underline}
+
+    span {color: $grey-169;}
+}
+
+#amazon {
+    background: url('../images/amazon.png')  top no-repeat, linear-gradient(#F9F9F9 2%, #CFD5DA 95%),
+    radial-gradient(33% 100%, rgba(255,255,255,0.70) 0%, rgba(0,0,0,0.20) 100%);
+    -webkit-background-size: cover;
+    -moz-background-size:    cover;
+    -o-background-size:      cover;
+    background-size:         cover;
+    background-color: $background-projects;
+
+    a, h6 {color: $grey-10}
+
+    span {color: $grey-64}
+
+    a:hover {text-decoration: underline}
+}
+
+
+
+#projects {
+    background: url('../images/projects.png') top center no-repeat, linear-gradient(-180deg, #151921 0%, #343643 97%);
+    -webkit-background-size: cover;
+    -moz-background-size:    cover;
+    -o-background-size:      cover;
+    background-size:         cover;
+    background-color: $background-projects;
+
+    a, h6 {color: white;}
+    
+    a:hover {text-decoration: underline}
+
+    span {color: $grey-169;}
+}
+
+
+// ----- ABOUT SECTION ----- //
+
+#about {
+    background: url('../images/about.jpg') top right no-repeat;
+    background-size: cover;
+    height:           auto;
+
+    a, h3 {
+        color:      $grey-10;
+        padding-bottom: 6px;
+    }
+
+    a:hover {
+        color: $grey-64;
+    }
+
+    p {
+        color:    $grey-6;
+        font-weight:  200;
+        line-height:  1.5;
+        font-size:   16px;
+    }
+}
+
+.about-text {
+    width:       550px;
+    height:       auto;
+    padding: 80px 20px;
+}
+
+
+// ----- SKILLS SECTION ----- //
+
+.flex-skills {display: flex}
+
+.skills {padding-bottom: 40px}
+
+.skills-left {
+    width:   750px;
+    margin: 36px;
+
+    p {
+        font-weight: 200;
+        line-height: 1.5;
+        font-size:  16px;
+    }
+}
+
+.skills-right {
+    display:      flex;
+    text-align: center;
+    flex-wrap:    wrap;
+    margin:  10px 20px;
+
+    p {font-size: 14px}
+
+    .logo {
+        width:       120px;
+        margin-left:  auto;
+        margin-right: auto;
+        padding-top:  25px;
+    }
+
+    svg {
+        width: 62px;
+        padding-bottom:  3px;
+    }
+}
+
+.logo-skills {text-align: center}
+
+hr {opacity: 0.4}
+
+
+// ----- CONTACT SECTION ----- //
+
+.email {
+    width:        330px;
+    margin-bottom: 60px;
+    margin-left:   auto;
+    margin-right:  auto;
+    text-align:  center;
+
+    a {
+        font-size:   18px;
+        line-height: 22px;
+    }
+}
+
+.fa {padding: 10px}
+
+
+// ----- FOOTER SECTION ----- //
+
+footer {margin-top: 100px}
+
+.logo-bottom {
+    width:       60px;
+    margin-left:  auto;
+    margin-right: auto;
+    img  {width: 60px}
+}
+
+
+.social {
+    padding: 20px 0 20px 50px;
+    width: 100%;
+    text-align: center;
+
+
+    li {
+        display:  inline;
+        font-weight: 200;
+        padding:    15px;
+    }
+
+    a, li {font-size: 14px}
+}
+
+
+
+// --- MODAL --- //
+.modal {
+    position           : fixed;
+    z-index            : 100;
+    display            : none;
+}
+
+.modal.closed {display: flex}
+
+.modal-bg {
+    position           : inherit;
+    width              : 100%;
+    height             : 100%;
+    top                : 0;
+    background-color   : black;
+    opacity            : 0.85;
+    z-index            : 101;
+}
+
+.close-button {
+    position           : inherit;
+    top                : 16px;
+    right              : 20px;
+    z-index            : 102;
+}
+
+.modal-main {
+    position  : inherit;
+    background: white;
+    top       : 50%;
+    left      : 50%;
+    transform : translate(-50%, -50%);
+    z-index   : 102;
+    max-width : 100vw;
+    max-height: 100vh;
+    padding   : 20px 20px 0;
+
+    h3 {
+        margin-bottom: 26px;
+        text-align: center;
+    }
+}
+
+.modal-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    img {
+        transition: all 0.5s ease;
+        box-shadow: 0 4px 8px 0 $grey-107;
+        margin-bottom: 20px;
+        }
+}
+
+.modal-images img:hover {
+  transform: scale(1.04);
+}
+
+#modal-content {
+    width: 90%;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+
+    p {
+        font-weight: 200;
+        line-height: 1.2;
+        font-size:  18px;
+    } 
+}
+
+.modal-links {margin-top: 38px}
+
+.hidden {display: none}
+
+.visible {display: block}
+
+
+
+@import "media-queries";
