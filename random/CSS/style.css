@@ -1,0 +1,67 @@
+body{
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+    background-image: url("http://eskipaper.com/images/watchmen-wallpaper-6.jpg")
+}
+
+p{
+    color: white;
+    font-style: italic;
+    font-size: 18px;
+    font-family: 'Open-Sans';
+}
+
+img{
+    padding: 20px;
+}
+
+.quotes{
+    background-color: grey;
+    width: 33%;
+    margin-right: auto;
+    margin-left: auto;
+    border-color: white;
+    border-style: solid;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 20px;
+    height: auto;
+    color: white;
+}
+
+.quote{
+    font-size: 30px;
+}
+
+.author{
+    font-size: 20px;
+    font-style: italic;
+}
+
+#newQuote {
+    color: white;
+    background-color: red;
+    border-color: red;
+    padding: 10px 40px;
+}
+
+#tweet-btn {
+    color: white;
+    background-color: #2980b9;
+    border-color: #2980b9;
+    padding: 10px 40px;
+}
+
+#newQuote:hover {
+    color: white;
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    padding: 10px 40px;
+}
+
+#tweet-btn:hover {
+    color: white;
+    background-color: #3498db;
+    border-color: #3498db;
+    padding: 10px 40px;
+}

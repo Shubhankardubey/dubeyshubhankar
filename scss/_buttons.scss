@@ -1,0 +1,20 @@
+/* ----- BUTTONS ----- */
+#my-btn {
+    font-size: 15px;
+    text-decoration: none;
+    background-color: desaturate($button, 30);
+    padding: 8px 22px;
+    line-height: 70px;
+    color: white;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 $shadow, 0 6px 20px 0 $shadow;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+#my-btn:hover {
+    background-color: $button;
+    box-shadow: 0 6px 10px 0 $shadow, 0 8px 16px 0 $shadow;
+}

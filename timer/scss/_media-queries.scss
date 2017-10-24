@@ -1,0 +1,48 @@
+/*=======================================
+=              MEDIA QUERIES           =
+=======================================*/
+
+
+/* -- BREAK 1 -- */
+
+@media all and (max-width: 500px) {
+
+    html {font-size: 10px}
+
+    .logo {
+        height:         32px;
+        width:          auto;
+        padding: 9px 4px 0 0;
+    }
+
+    main {
+        width:        300px;
+        padding:     0 10px;
+        margin: 20px auto 0;
+    }
+
+    canvas {margin: 34px 0 20px}
+
+    #counter {
+        top:      232px;
+        height:   178px;
+        width:    178px;
+        padding: 40px 0;
+    }
+
+    #counter-content {
+        top:      232px;
+        height:   180px;
+        width:    180px;
+        padding: 30px 0;
+    }
+
+    .divplus, .divminus {
+        height: 36px;
+        }
+
+    .btn {
+        width:       90%;
+        margin-top: 40px;
+    }
+}
