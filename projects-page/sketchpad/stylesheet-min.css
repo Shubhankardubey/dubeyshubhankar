@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Cabin Sketch', cursive; }
+
+body {
+  background-color: #c51110; }
+
+#wrap {
+  max-width: 700px;
+  position: relative;
+  margin: 0 auto;
+  padding: 30px; }
+
+h1 {
+  color: #1d1d1d;
+  text-align: center;
+  margin: 30px; }
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  max-width: 572px; }
+
+.cell {
+  background-color: #e9e7e8;
+  max-width: 30px;
+  max-height: 30px; }
+
+#bottom-element {
+  width: 700px;
+  text-align: center;
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+#left-dial, #right-dial {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #e9e7e8;
+  border-radius: 50%;
+  border: dotted 4px #cccccc;
+  height: 80px;
+  width: 80px;
+  color: #1c1c1c;
+  cursor: pointer; }
+
+.table-cell {
+  padding: 32px 0; }
+
+select {
+  background-color: white;
+  width: 100px; }
+
+@media only screen and (max-width: 770px) {
+  .cell {
+    max-width: 20px;
+    max-height: 20px; }
+  #container {
+    max-width: 440px; }
+  #bottom-element {
+    max-width: 440px; } }
+
+@media only screen and (max-width: 500px) {
+  .cell {
+    max-width: 16px;
+    max-height: 16px; }
+  #container {
+    max-width: 352px; }
+  #bottom-element {
+    max-width: 352px; }
+  #left-dial, #right-dial {
+    font-size: 16px;
+    line-height: 18px;
+    height: 60px;
+    width: 60px; }
+  .table-cell {
+    padding: 14px 0; } }
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 24px;
+    margin: 10px 0 40px; }
+  .cell {
+    max-width: 12px;
+    max-height: 12px; }
+  #container {
+    max-width: 264px; }
+  #bottom-element {
+    max-width: 264px; }
+  #left-dial, #right-dial {
+    font-size: 16px;
+    line-height: 18px;
+    height: 60px;
+    width: 60px; }
+  .table-cell {
+    padding: 14px 0; } }

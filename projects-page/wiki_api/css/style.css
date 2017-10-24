@@ -1,0 +1,18 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    /* background-image: url("http://naomholaf.com/wp-content/uploads/2017/04/Great-White-Painted-Brick-Texture-44-For-with-White-Painted-Brick-Texture.jpg")*/
+    background-color: #ecf0f1;
+}
+
+button {
+    margin-top: 10px;
+    padding: 25, 15px;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+#output {
+    padding-top: 40px;
+}

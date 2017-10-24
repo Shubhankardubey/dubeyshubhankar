@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.logo {
+    position: absolute;
+    top: 25%;
+    left: 18%;
+}
+
+.logo1 {
+    height: 550px;
+    width: 250px;
+}
+
+.bethesda-logo {
+    position: absolute;
+    top: 85%;
+    left: 5%;
+}
+
+.logo2 {
+    height: 75px;
+    width: 150px;
+}
+
+.menu {
+    position: absolute;
+    top: 67%;
+    left: 85%;
+
+}
+
+ul {
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 1.7;
+    color: #515151;
+}
+
+.continue {
+    font-size: 25px;
+    color: white;
+}
+
+.continue:hover {
+    color: #d2d2d2;
+}
+
+a:hover {
+    color: #fff;
+}
