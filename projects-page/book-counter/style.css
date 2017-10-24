@@ -1,0 +1,189 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+h2 {
+  margin: 1.75em 0 0 0;
+  color: #111;
+  font-weight: 700; }
+  h2 span {
+    font-weight: 300; }
+
+p {
+  padding: 5px;
+  margin: 6px 0 0px; }
+
+#info p {
+  padding: 10px;
+  margin: 10px 0 4px; }
+
+i {
+  font-size: 12px;
+  color: #FF2910; }
+
+.built, a {
+  padding: 0;
+  margin: 0;
+  color: #111;
+  text-decoration: none;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease; }
+
+a:hover {
+  text-decoration: underline; }
+
+/*  ---- COLORS ---- */
+/* ----- BUTTONS ----- */
+#my-btn {
+  font-size: 15px;
+  text-decoration: none;
+  background-color: #db4534;
+  padding: 8px 22px;
+  line-height: 70px;
+  color: white;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease; }
+
+#my-btn:hover {
+  background-color: #FF2910;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+
+body {
+  background-color: #CFCCBC;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif; }
+
+/* center div */
+.center {
+  background-color: #B2B3A4;
+  width: 500px;
+  height: auto;
+  border-radius: 4px;
+  margin: 120px auto;
+  text-align: center;
+  padding: 10px 20px;
+  clear: both; }
+
+label {
+  color: #111; }
+
+input {
+  display: block;
+  width: 100%;
+  height: 32px;
+  font-size: 22px; }
+
+input,
+input[type],
+textarea {
+  background-color: #CFCCBD;
+  border-radius: 0;
+  height: 40px;
+  border: 2px solid rgba(0, 0, 0, 0.2); }
+
+input:focus,
+input[type]:focus,
+textarea:focus {
+  box-shadow: 0 0px 0px rgba(219, 69, 52, 0) inset, 0 0 0px rgba(219, 69, 52, 0);
+  border: 2px solid #db4534;
+  outline: 0 none; }
+
+/* right side div */
+#info {
+  background-color: #B2B3A4;
+  color: #111;
+  width: 300px;
+  padding: 0 15px;
+  text-align: center;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+/* details in the right side bar */
+#bookName {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 120%;
+  margin-top: 10px;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #111;
+  padding: 10px 0; }
+
+#totalPages {
+  font-size: 150%;
+  font-weight: 200;
+  color: #111;
+  display: block;
+  margin: 20px; }
+
+#pagesLeft {
+  font-size: 440%;
+  color: #db4534;
+  display: inline-block;
+  padding: 10px 0 0 0;
+  margin: 0; }
+
+#percentageLeft {
+  text-transform: uppercase;
+  color: #db4534;
+  font-weight: 600;
+  font-size: 2em;
+  border-top: 1px solid #111;
+  padding: 0px;
+  line-height: 2em; }
+
+/*
+ MEDIA QUERIES
+*/
+/* -- BREAK 1 -- */
+@media only screen and (max-width: 1400px) {
+  .logo {
+    background-size: 50%;
+    background-position: center;
+    width: 170px;
+    height: 120px; }
+  #info {
+    width: 250px; } }
+
+/* -- BREAK 2 -- */
+@media only screen and (max-width: 1200px) {
+  .logo {
+    background-size: 60px;
+    background-position: 16px, 1px;
+    width: 100%;
+    height: 80px;
+    margin: 0; }
+  .center {
+    margin: 50px auto; }
+  #info {
+    width: 100%;
+    padding: 1px 0 40px;
+    min-height: 200px;
+    height: auto;
+    position: relative; }
+  #info {
+    font-size: 0.9em; } }
+
+/* -- BREAK 3 -- */
+@media only screen and (max-width: 600px) {
+  .center {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 20px 0;
+    background-color: #CFCCBD; }
+  input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 32px;
+    font-size: 22px; }
+  #my-btn {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    margin: 40px 0 60px; } }

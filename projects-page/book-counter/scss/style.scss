@@ -1,0 +1,114 @@
+@import "typography";
+@import "colors";
+@import "buttons";
+
+
+
+body {
+    background-color: #CFCCBC;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* center div */
+
+.center {
+    background-color: #B2B3A4;
+    width: 500px;
+    height: auto;
+    border-radius: 4px;
+    margin: 120px auto;
+    text-align: center;
+    padding: 10px 20px;
+    clear: both;
+}
+
+label {
+      color: #111;
+}
+
+input {
+  display: block;
+  width: 100%;
+  height: 32px;
+  font-size: 22px;
+}
+
+
+input,
+input[type],
+textarea {
+  background-color: #CFCCBD;
+    -webkit-border-radius: 0;
+    -moz-border-radius:    0;
+    border-radius:         0;
+    height:             40px;
+    border: 2px solid $shadow;
+}
+
+input:focus,
+input[type]:focus,
+textarea:focus {
+    box-shadow: 0 0px 0px rgba($brand, 0) inset, 0 0 0px rgba($brand, 0);
+    border: 2px solid $brand;
+    outline:      0 none;
+}
+
+
+
+/* right side div */
+
+#info {
+    background-color: #B2B3A4;
+    color: #111;
+    width: 300px;
+    padding: 0 15px;
+    text-align: center;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/* details in the right side bar */
+
+#bookName {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 120%;
+    margin-top: 10px;
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+    padding: 10px 0;
+}
+
+#totalPages {
+    font-size: 150%;
+    font-weight: 200;
+    color: #111;
+    display: block;
+    margin: 20px;
+}
+
+#pagesLeft {
+    font-size: 440%;
+    color: $brand;
+    display: inline-block;
+    padding: 10px 0 0 0;
+    margin: 0;
+}
+
+#percentageLeft {
+    text-transform: uppercase;
+    color: $brand;
+    font-weight: 600;
+    font-size: 2em;
+    border-top: 1px solid #111;
+    padding: 0px;
+    line-height: 2em;
+}
+
+
+@import "media-queries"

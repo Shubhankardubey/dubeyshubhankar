@@ -1,0 +1,236 @@
+/* GENERAL STYLES
+- - - - - - - - - - - - - - - - - - - - - */
+
+body {
+    background: lightblue;
+    text-align: center;
+    font-family: 'VT323', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #333;
+    text-shadow: 2px 2px 0px black;
+}
+
+
+/* TYPOGRAPHY STYLES
+- - - - - - - - - - - - - - - - - - - - - */
+
+h1 strong {
+    display: block;
+    font-family: 'VT323', monospace;
+    font-size: 90px;
+    font-weight: bold;
+    color: #ffdd55;
+}
+
+p {
+    text-align: center;
+}
+
+
+/* TARGET SECTION STYLES (ALL)
+- - - - - - - - - - - - - - - - - - - - - */
+
+form {
+    animation-name: move;
+    animation-duration: 13s;
+/*    animation-delay: 0;*/
+    animation-timing-function: linear;
+
+
+}
+
+.road {
+    position: absolute;
+    top: 285px;
+    height: 30%;
+    background: dimgrey;
+    box-sizing: border-box;
+    border-top: 10px solid grey;
+    border-bottom: 10px solid grey;
+    width: 100%;
+}
+
+.lines {
+    box-sizing: border-box;
+    border: 5px dashed #fff;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+
+.green {
+    position: absolute;
+    top: 560px;
+    width: 100%;
+    height: 45%;
+    background-color: #2E8B57;
+    box-sizing: border-box;
+    z-index: -10;
+}
+
+.clouds {
+    height: 200px;
+    top: 10px;
+    right: 550px;
+    position: absolute;
+    animation-name: move2;
+    animation-duration: 16s;
+    animation-delay: -3s;
+    animation-timing-function: linear;
+    z-index: -1;
+
+}
+
+.cloud2 {
+    height: 150px;
+    opacity: .8;
+    top: 75px;
+    right: -85px;
+    position: absolute;
+    animation-name: move2;
+    animation-duration: 17s;
+    animation-delay: -4s;
+    animation-timing-function: linear;
+    z-index: -2;
+}
+
+label {
+/*
+    background: #B109AA;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 15px #000000, inset 0 0 0 30px #ffffff;
+*/
+    /* css trick: double border */
+}
+
+input:checked+label {
+/*    transform: rotateX(70deg);*/
+    transform: rotate(-20deg);
+}
+
+
+/* INDIVIDUAL TARGET STYLES
+change the size, shape, background, add more, etc
+- - - - - - - - - - - - - - - - - - - - - */
+
+label:first-of-type {
+    width: 125px;
+    padding-bottom: 140px;
+    background: url(images/mario.png);
+    background-size: cover;
+    left: -5%;
+}
+
+label:nth-of-type(2) {
+    width: 119px;
+    height: 127px;
+    padding-bottom: 120px;
+    top: 20px;
+    background: url(images/luigi.png);
+    background-size: cover;
+    left: -10%;
+}
+
+label:nth-of-type(3) {
+    width: 185px;
+    height: 127px;
+    padding-bottom: 140px;
+    background: url(images/mushroom.png);
+    background-size: cover;
+    left: -15%;
+}
+
+label:nth-of-type(4) {
+    width: 120px;
+    height: 127px;
+    padding-bottom: 120px;
+    top: 20px;
+    background: url(images/luigi.png);
+    background-size: cover;
+    left: -17%;
+}
+
+label:nth-of-type(5) {
+    width: 125px;
+    height: 127px;
+    padding-bottom: 140px;
+    top: 20px;
+    background: url(images/mario.png);
+    background-size: cover;
+    left: -20%;
+}
+
+label:nth-of-type(6) {
+    width: 180px;
+    height: 140px;
+    padding-bottom: 120px;
+    background: url(images/mushroom.png);
+    background-size: cover;
+    left: -23%;
+}
+
+label:nth-of-type(7) {
+    width: 126px;
+    height: 127px;
+    padding-bottom: 140px;
+    top: 20px;
+    background: url(images/mario.png);
+    background-size: cover;
+    left: -25%;
+}
+
+label:nth-of-type(8) {
+    width: 184px;
+    height: 140px;
+    padding-bottom: 120px;
+    top: 20px;
+    background: url(images/mushroom.png);
+    background-size: cover;
+    left: -30%;
+}
+
+label:nth-of-type(9) {
+    width: 132px;
+    height: 127px;
+    padding-bottom: 140px;
+    background: url(images/mario.png);
+    background-size: cover;
+    left: -32%;
+}
+
+label:nth-of-type(10) {
+    width: 119px;
+    height: 127px;
+    padding-bottom: 120px;
+    top: 20px;
+    background: url(images/luigi.png);
+    background-size: cover;
+    left: -35%;
+}
+
+
+
+
+/* CSS ANIMATION KEYFRAME TO MOVE TARGETS
+- - - - - - - - - - - - - - - - - - - - - */
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(3700px);
+    }
+}
+
+@keyframes move2 {
+    from {
+        transform: translateX(1000px);
+    }
+    to {
+        transform: translateX(-1800px);
+    }
+}

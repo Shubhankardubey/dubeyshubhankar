@@ -1,0 +1,56 @@
+// --------------------------------------------------
+// Buttons
+// --------------------------------------------------
+
+
+//--------------------------------
+// Buttons
+//--------------------------------
+
+.btn {
+    border: none;
+    background: none;
+	margin: 6px;
+	color: $white;
+    font-size: 1rem;
+	border-radius: 6px;
+	padding: 0.6em 1em;
+	transition: all 0.2s ease;
+	
+	&:active {
+		transform: scale(0.98);
+	}
+}
+
+
+.btn-outline {
+	color: $brand;
+	border: 2px solid $outline;
+	padding: 0.52em 1.1em;
+	
+	&:hover {
+	background-color: $brand;
+    color: $white;
+	}
+}
+
+.btn-round {border-radius: 50px}
+
+.btn-sm {font-size: 0.707em}
+
+
+//--------------------------------
+// Background Colors
+//--------------------------------
+
+.bg-brand {
+    background-color: $brand;
+
+    &:hover {background-color: darken($brand, 5)}
+}
+
+.bg-alt {
+    background-color: $purple500;
+
+    &:hover {background-color: darken($purple500, 5)}
+}

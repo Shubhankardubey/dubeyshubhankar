@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Book Counter</title>
+    <link rel="stylesheet" href="style.css" />
+
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+      <!-- JQUERY -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+      <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+      
+
+</head>
+
+<body>
+
+    <div class="center">
+      <h2>BOOK<span>COUNTER</span></h2>
+        <form>
+            <label><p>Book Name: </p></label>
+            <input name="booktitle" id="booktitle" type="text">
+            <label><p>Total Pages: </p></label>
+            <input name="total-pages" id="total-pages" type="text">
+            <label><p>Current Page: </p></label>
+            <input name="pages" id="pages" type="text">
+            <a href="#info" id="my-btn" type="button" href="#info">SUBMIT</a>
+            <p class="built">Built with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="#"><strong>SHUBHANKAR DUBEY</strong></a></p>
+        </form>
+    </div>
+
+    <div id="info">
+        <h2>Book Info</h2>
+        <div id="bookName"></div>
+        <div id="totalPages"></div>
+        <div id="pagesLeft"></div>
+        <p>Pages Remaining.</p>
+        <div id="percentageLeft"></div>
+        <p>Remaining.</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+
+<script>
+	$(function() {
+		$('a[href*="#"]:not([href="#"])').click(function() {
+			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				if (target.length) {
+					$('html, body').animate({
+						scrollTop: target.offset().top
+					}, 1000);
+					return false;
+				}
+			}
+		});
+	});
+</script>
+
+
+	<!-- FONT AWESOME -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</html>

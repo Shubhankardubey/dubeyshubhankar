@@ -1,0 +1,133 @@
+/*----------  Break Point 1 - 1000px  ----------*/
+
+@media only screen and (max-width: 1000px) {
+
+    body {background-color: $brand}
+
+    header {padding: 12px}
+
+    nav {display: none}
+
+    .hamburger {display: block}
+
+    h1 {font-size: 10rem}
+
+    .logo, .date {color: white}
+
+    .logo:before {
+        color: white;
+        font-size:  4rem;
+        margin-left: -275px;
+    }
+
+    .dates {left: 30%}
+
+    .dates-li {display: block}
+
+    .date-active {color: black}
+
+    .dates:after {
+        border-bottom: 1px solid black;
+        content: " ";
+        left: 80px;
+        position: absolute;
+        top: 16px;
+        width: 40px;
+    }
+
+}
+
+
+/*----------  Break Point 2 - 768px  ----------*/
+
+@media only screen and (max-width: 768px) {    
+
+    nav, .social {display: none}
+
+    .logo {
+        margin: -90px auto auto 60px;
+        
+        &:before {
+            font-size: 4rem;
+            left: -30px;
+            margin-left: 0;
+            top: -8px;
+        }
+    }
+
+    h1 {font-size: 8rem}
+
+    .dates {
+        left: 0;
+        margin-left: 60px;
+        top: 65%;
+
+        &-li {padding: 5px}
+
+        &:after {
+            left: 70px;
+            top: 12px;
+        }
+    }
+
+    footer {padding: 0 20px 20px}
+
+    .email-link {font-size: 0.9rem}
+
+    .email-prefix {display: none}
+}
+
+
+
+/*----------  Break Point 2 - 500px  ----------*/
+
+@media only screen and (max-width: 500px) {
+    
+
+    main {background-position: left top}
+
+    .logo {
+        margin: -90px auto auto 40px;
+
+        &:before {
+            font-size: 3rem;
+            left: -20px;
+            top: -10px;
+        }
+    }
+
+    h1 {font-size: 6rem}
+}
+
+
+
+/*
+/* LANDSCAPE
+/*
+
+
+/*----------  Break Point 2 - 600px  ----------*/
+
+@media only screen and (max-height: 600px) {  
+
+    .logo {
+        &:before {
+            font-size: 3rem;
+            left: 250px;
+            top: -10px;
+        }
+    }
+
+    h1 {font-size: 6rem}
+
+    .dates {
+        top: 50%;
+
+        &-li {padding: 5px}
+        
+        &:after {
+            top: 12px;
+            left: 70px;
+        }
+    }
+}

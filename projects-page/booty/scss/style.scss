@@ -1,0 +1,20 @@
+
+
+
+@import "normalise";
+@import "colors";
+@import "typography";
+@import "buttons";
+@import "utilities";
+
+body {background: $background}
+
+section {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+article {margin: 52px 0}
+
+@import "media-queries";

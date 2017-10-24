@@ -1,0 +1,396 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+input, select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+a:focus, button:focus {
+  outline: none;
+}
+
+h1 {
+  font-family: 'Muli', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14rem;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+}
+
+a {
+  font-family: 'Muli', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+
+::-moz-selection {
+  background: #ffd00b;
+}
+
+::selection {
+  background: #ffd00b;
+}
+
+::-moz-selection {
+  background: #ffd00b;
+}
+
+header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 0 auto;
+  max-width: 1400px;
+  padding: 15px 30px;
+}
+
+.nav-logo img {
+  width: 70px;
+}
+
+.nav-li {
+  display: inline;
+  padding: 30px;
+}
+
+.nav-link, .mob-link {
+  color: white;
+  font-family: 'Muli', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.nav-link:hover, .mob-link:hover {
+  border-bottom: 2px solid white;
+}
+
+.nav-link-active {
+  border-bottom: 2px solid white;
+}
+
+.nav-link-active:hover {
+  border-bottom: 2px solid white;
+}
+
+.mob-link {
+  color: black;
+}
+
+/*----------  Mobile Nav  ----------*/
+.mobile-nav {
+  background-color: rgba(250, 205, 16, 0.87);
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.mobile-nav ul {
+  list-style-type: none;
+  padding-top: 50px;
+}
+
+.mobile-nav li {
+  padding: 10px 0;
+}
+
+.mobile-nav li a {
+  font-size: 2rem;
+}
+
+.hamburger {
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 4px 7px;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  z-index: 22;
+}
+
+.hidden, .hamburger {
+  display: none;
+}
+
+.fa {
+  color: white;
+  cursor: pointer;
+}
+
+/*=====  End of Header / Nav  ======*/
+main {
+  background: url("../images/right.jpg");
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  height: 100vh;
+  width: 100vw;
+}
+
+.logo {
+  margin: -90px auto auto 16%;
+  position: absolute;
+  top: 46%;
+}
+
+.logo:before {
+  color: grey;
+  content: "08";
+  font-size: 6rem;
+  height: 45px;
+  left: 50%;
+  letter-spacing: -0.01em;
+  line-height: 45px;
+  margin-left: -380px;
+  position: absolute;
+  width: 45px;
+}
+
+.dates {
+  bottom: 130px;
+  left: 50%;
+  margin-left: -130px;
+  position: absolute;
+}
+
+.dates-li {
+  display: inline;
+  padding: 10px 5px;
+  text-align: right;
+}
+
+.dates:after {
+  border-bottom: 1px solid black;
+  content: " ";
+  left: 180px;
+  position: absolute;
+  top: 7px;
+  width: 150px;
+}
+
+.date {
+  color: grey;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.date-active, .date:hover {
+  color: black;
+}
+
+footer {
+  bottom: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 100px 40px;
+  position: absolute;
+  width: 100%;
+}
+
+.email {
+  float: left;
+}
+
+.email-link {
+  color: black;
+  font-weight: 600;
+}
+
+.email-link:hover {
+  color: grey;
+}
+
+.social {
+  color: white;
+  float: right;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.social-link {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.social-link:hover {
+  color: black;
+}
+
+/*----------  Break Point 1 - 1000px  ----------*/
+@media only screen and (max-width: 1000px) {
+  body {
+    background-color: #facd10;
+  }
+  header {
+    padding: 12px;
+  }
+  nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  h1 {
+    font-size: 10rem;
+  }
+  .logo, .date {
+    color: white;
+  }
+  .logo:before {
+    color: white;
+    font-size: 4rem;
+    margin-left: -275px;
+  }
+  .dates {
+    left: 30%;
+  }
+  .dates-li {
+    display: block;
+  }
+  .date-active {
+    color: black;
+  }
+  .dates:after {
+    border-bottom: 1px solid black;
+    content: " ";
+    left: 80px;
+    position: absolute;
+    top: 16px;
+    width: 40px;
+  }
+}
+
+/*----------  Break Point 2 - 768px  ----------*/
+@media only screen and (max-width: 768px) {
+  nav, .social {
+    display: none;
+  }
+  .logo {
+    margin: -90px auto auto 60px;
+  }
+  .logo:before {
+    font-size: 4rem;
+    left: -30px;
+    margin-left: 0;
+    top: -8px;
+  }
+  h1 {
+    font-size: 8rem;
+  }
+  .dates {
+    left: 0;
+    margin-left: 60px;
+    top: 65%;
+  }
+  .dates-li {
+    padding: 5px;
+  }
+  .dates:after {
+    left: 70px;
+    top: 12px;
+  }
+  footer {
+    padding: 0 20px 20px;
+  }
+  .email-link {
+    font-size: 0.9rem;
+  }
+  .email-prefix {
+    display: none;
+  }
+}
+
+/*----------  Break Point 2 - 500px  ----------*/
+@media only screen and (max-width: 500px) {
+  main {
+    background-position: left top;
+  }
+  .logo {
+    margin: -90px auto auto 40px;
+  }
+  .logo:before {
+    font-size: 3rem;
+    left: -20px;
+    top: -10px;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+/*
+/* LANDSCAPE
+/*
+
+
+/*----------  Break Point 2 - 600px  ----------*/
+@media only screen and (max-height: 600px) {
+  .logo:before {
+    font-size: 3rem;
+    left: 250px;
+    top: -10px;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  .dates {
+    top: 50%;
+  }
+  .dates-li {
+    padding: 5px;
+  }
+  .dates:after {
+    top: 12px;
+    left: 70px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
