@@ -1,0 +1,26 @@
+/*=============================================
+=                 MEDIA QUERIES               =
+=============================================*/
+
+
+/* -- BREAK 1 -- */
+
+@media only screen and (max-width: 600px) {
+    .temp {
+        top: 18px;
+        right: 16px;
+		height: 30px;
+        p,a {font-size: 1.3rem;}
+    }
+    .weather-place {
+        padding-top: 70px;
+    }
+    .large {
+        font-size: 160px;
+    }
+    footer {
+        height: 10px;
+        line-height: 10px;
+        padding: 0;
+    }
+}

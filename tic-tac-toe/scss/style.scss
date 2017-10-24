@@ -1,0 +1,136 @@
+@import "normalise";
+@import "colors";
+@import "typography";
+@import "modals";
+
+
+body {
+    background: $white;
+}
+
+// ---- Nav Bar ---- /
+
+header {
+	width: 	   100%;
+	position: fixed;
+    display: table;
+	top: 	 	  0;
+	z-index: 	  2;
+	background-color: black;
+    text-align: center;
+}
+
+
+nav {
+    padding: 8px;
+    display: table-cell;
+    vertical-align: middle;
+    z-index: 100;
+}
+
+.logo {
+	-ms-flex-item-align: center;
+	-ms-grid-row-align: center;
+	align-self: center;
+}
+
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: table;
+}
+
+section {
+    display: table-cell;
+    vertical-align: middle;
+    padding-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.square {
+    width: 160px;
+    height: 160px;
+    cursor: pointer;
+    cursor: hand;
+    text-align: center;
+    padding-top: 20px;
+	transition: all 0.4s ease;
+
+    &:hover {background: $light-grey}
+    &:active {background: darken($light-grey, 5)}
+}
+
+.top-border {border-top: 2px solid $black}
+
+.right-border {border-right: 2px solid $black}
+
+button {
+    border:     none;
+    background: none;
+	color:    $black;
+    margin: 70px 0 20px 0;
+    font-size: 1.4rem;
+    padding: 12px 14px;
+	border-radius: 1px;
+    border: 1px solid $black;
+	transition: all 0.5s ease;
+
+    &:hover {background: darken($white, 6)}
+
+    &:active {
+        background: darken($white, 6);
+        transform:        scale(0.96);
+        }
+}
+
+// ---- Footer ---- //
+
+footer {
+	right: 				0;
+	bottom: 		 	0;
+	left: 			 	0;
+	padding: 		 10px;
+	width: 			 100%;
+	display: 	 	table;
+	text-align:    center;
+	position: 	    fixed;
+	background:   black;
+}
+
+.built {
+	color: 		   white;
+	display: 	table-cell;
+	vertical-align: middle;
+}
+
+
+
+// ---- Footer Styles ---- //
+
+footer p {font-size: 1em;}
+
+.built a, strong {
+	font-weight: 500;
+	
+	&:hover {text-decoration: underline}
+}
+
+.fa-heart {
+	font-size:  12px;
+	color: #fc2d23;
+}
+
+.fa-free-code-camp {
+	padding: 0 5px 0 0;
+	color:   white;
+}
+
+
+
+
+@import "media-queries";

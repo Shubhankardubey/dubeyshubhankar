@@ -1,0 +1,85 @@
+@import "normalise";
+@import "colors";
+@import "typography";
+
+// ------- Page Contents -------- //
+
+html {
+  max-height: 100vh;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  height: 100%;
+	background-position: no-repeat bottom center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+main{
+	background: rgba(0, 0, 0, 0.4);
+	height: 100vh;
+	margin-top: -56px;
+}
+
+nav {
+	max-width: 100%;
+	height: 56px;
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.logo {
+	-ms-flex-item-align: center;
+	-ms-grid-row-align: center;
+	align-self: center;
+}
+
+.temp {
+	position: absolute;
+	top: 16px;
+	right: 32px;
+	cursor: pointer;
+	height: 40px;
+}
+
+.loading {
+	padding-top: 100px;
+}
+.weather-place {
+	margin: 0 auto;
+	padding-top: 130px;
+	max-width: 600px;
+	height: 400px;
+	text-align: center;
+}
+
+footer {
+	background: rgba(0, 0, 0, 0.4);
+	display: table;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.built {
+	display: table-cell;
+	vertical-align: middle;
+	color: #c8c8c8;
+}
+
+
+@import "media-queries";

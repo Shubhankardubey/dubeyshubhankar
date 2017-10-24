@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Tic-Tac-Toe</title>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/png" href="images/facicon.png" />
+
+    <!-- Meta Data -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Tic-Tac-Toe Game">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Open+Sans:300,700" rel="stylesheet">
+
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1 class="logo"><a href="#"><span>Tic</span>Tac<span>Toe</span></a></h1>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="row">
+                <div id="1" class="square right-border"></div>
+                <div id="2" class="square right-border"></div>
+                <div id="3" class="square"></div>
+            </div>
+            <div class="row">
+                <div id="4" class="square top-border right-border"></div>
+                <div id="5" class="square top-border right-border"></div>
+                <div id="6" class="square top-border"></div>
+            </div>
+            <div class="row">
+                <div id="7" class="square top-border right-border"></div>
+                <div id="8" class="square top-border right-border"></div>
+                <div id="9" class="square top-border"></div>
+            </div>
+
+            <div class="row">
+                <button role="button" class="restart"><i class="fa fa-repeat" aria-hidden="true"> </i> RESTART</button>
+            </div>
+        </section>
+
+        <!-- MODAL WORLD -->
+
+        <!-- Modal Background -->
+
+        <div id="modal-bg" class=""></div>
+
+        <!-- Start Modal -->
+
+        <div id="start" class="">
+            <div class="close">
+                <p>x</p>
+            </div>
+            <h2>choose</h2>
+            <div id="player" class="row">
+                <div id="one" onclick="onePlayer();">
+                    <h4 class="grey">One Player</h4>
+                </div>
+                <div id="two" onclick="twoPlayer();">
+                    <h4>Two Player</h4>
+                </div>
+            </div>
+
+            <div id="symbol" class="hidden">
+                <div id="X">
+                    <h3>X</h3>
+                </div>
+                <div id="O">
+                    <h3>O</h3>
+                </div>
+            </div>
+        </div>
+
+        <div id="winner" class="hidden">
+            <div class="close">
+                <p>x</p>
+            </div>
+            <h2 id="who-wins"></h2>
+            <button role="button" class="restart"><i class="fa fa-repeat" aria-hidden="true"> </i> RESTART</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="built">Built with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="#"><strong>SHUBHANKAR DUBEY</strong></a></p>
+    </footer>
+
+
+
+    <!-- JAVASCIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</html>

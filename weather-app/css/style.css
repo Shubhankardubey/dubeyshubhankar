@@ -1,0 +1,201 @@
+/*=============================================
+=                  NORMALISE                  =
+=============================================*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Added by Richard */
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+a {
+  text-decoration: none; }
+
+/*====== TYPOGRAPHY =======*/
+* {
+  font-family: "Open Sans";
+  color: white; }
+
+h1 {
+  font-size: 1.5em;
+  font-family: "Open Sans";
+  font-weight: 200; }
+
+h1 span {
+  font-weight: 700; }
+
+h2 {
+  font-size: 1.5em;
+  font-family: "Open Sans";
+  font-weight: 200;
+  padding-bottom: 20px; }
+
+h2 span {
+  font-weight: 700; }
+
+p, a {
+  font-size: 1.8rem;
+  font-family: "Open Sans";
+  font-weight: 200;
+  padding-bottom: 15px;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease; }
+  p:hover, a:hover {
+    color: white; }
+
+p span {
+  font-family: helvetica;
+  font-size: 1.2em;
+  font-weight: 400; }
+
+h4 {
+  font-size: 1.2em;
+  font-family: "Open Sans";
+  font-weight: 400;
+  text-align: right; }
+
+footer p {
+  font-family: "Open Sans";
+  font-size: 0.9em;
+  padding-top: 14px;
+  font-weight: 300; }
+  footer p strong {
+    color: white; }
+
+.built a,
+strong {
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease; }
+  .built a:hover,
+  strong:hover {
+    text-decoration: underline; }
+
+.large {
+  font-size: 240px; }
+
+.fa-free-code-camp {
+  padding: 0 5px 0 0;
+  color: white; }
+
+.fa-heart {
+  font-size: 12px;
+  color: #fc2d23; }
+
+html {
+  max-height: 100vh;
+  box-sizing: border-box; }
+
+body {
+  position: relative;
+  height: 100%;
+  background-position: no-repeat bottom center fixed;
+  background-size: cover; }
+
+main {
+  background: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+  margin-top: -56px; }
+
+nav {
+  max-width: 100%;
+  height: 56px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.logo {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center; }
+
+.temp {
+  position: absolute;
+  top: 16px;
+  right: 32px;
+  cursor: pointer;
+  height: 40px; }
+
+.loading {
+  padding-top: 100px; }
+
+.weather-place {
+  margin: 0 auto;
+  padding-top: 130px;
+  max-width: 600px;
+  height: 400px;
+  text-align: center; }
+
+footer {
+  background: rgba(0, 0, 0, 0.4);
+  display: table;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center; }
+
+.built {
+  display: table-cell;
+  vertical-align: middle;
+  color: #c8c8c8; }
+
+/*=============================================
+=                 MEDIA QUERIES               =
+=============================================*/
+/* -- BREAK 1 -- */
+@media only screen and (max-width: 600px) {
+  .temp {
+    top: 18px;
+    right: 16px;
+    height: 30px; }
+    .temp p, .temp a {
+      font-size: 1.3rem; }
+  .weather-place {
+    padding-top: 70px; }
+  .large {
+    font-size: 160px; }
+  footer {
+    height: 10px;
+    line-height: 10px;
+    padding: 0; } }
+/*# sourceMappingURL=style.css.map */

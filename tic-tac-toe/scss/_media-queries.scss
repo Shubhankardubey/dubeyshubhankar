@@ -1,0 +1,85 @@
+/*=======================================
+=              MEDIA QUERIES           =
+=======================================*/
+
+
+/* -- BREAK 1 -- */
+
+@media all and (max-width: 580px) {
+
+    .square {
+        width: 110px;
+        height: 110px;
+        font-size: 80px;
+        padding-top: 10px;
+
+        &:hover {background: none}
+        &:active {background: $light-grey}
+    }
+
+    h1 {font-size: 1.8em}
+    h2 {font-size: 2.4em}
+    h3 {
+        font-size: 5em;
+        padding: 0 25px;
+    }
+    h4 {
+    font-size: 2.7em;
+    padding: 0 20px;
+}
+
+    button {margin: 40px 0 20px 0}
+
+    // Modals //
+
+    #winner, #start {
+    width: 300px;
+    height: 200px;
+    top: -80px;
+    padding: 30px;
+}
+
+footer {
+	padding:     8px;
+    font-size: 0.8em;
+    }
+
+}
+
+
+/* -- BREAK 2 -- */
+
+@media all and (max-width: 400px) {
+
+    .square {
+        width: 90px;
+        height: 90px;
+        padding-top: 0;
+    }
+
+     // Modals //
+
+    #winner, #start {
+    width: 280px;
+    height: 190px;
+    top: -80px;
+    padding: 20px;
+}
+
+
+}
+
+
+
+/* Heights */
+
+// /* -- BREAK 2 -- */
+
+// @media all and (max-height: 900px) {
+
+//     .square {
+//         width: 90px;
+//         height: 90px;
+//         padding-top: 0;
+//     }
+// }
