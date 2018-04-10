@@ -437,9 +437,9 @@ body {
 }
 
 #about {
-    background: url("../images/about12.jpg") top right no-repeat;
+    background: url("../images/123.jpg") right no-repeat;
     background-size: cover;
-    height: auto
+    height: auto;
 }
 
 #about a,
