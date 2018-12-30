@@ -547,15 +547,14 @@ footer {
 }
 
 .social {
-    padding: 20px 0 20px 50px;
+    padding: 10px 0 10px 10px;
     width: 100%;
-    text-align: center
 }
 
 .social li {
     display: inline;
     font-weight: 200;
-    padding: 15px
+    padding: 10px
 }
 
 .social a,
@@ -903,4 +902,117 @@ footer {
     .email {
         padding: 0 30px
     }
+}
+
+.timelineBody {
+  display: flex;
+  width: 100%;
+  padding: 50px 20px;
+  font-family: 'Source Sans Pro', arial, sans-serif;
+  font-weight: 300;
+  color: #333;  
+}
+
+.timeline {
+  width: 100%;
+  max-width: 800px;
+  background: linear-gradient(100deg, #4E75B9 10%, #5CBF98 90%);
+  padding: 50px 50px;
+  position: relative;
+  box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
+}
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: calc(33% + 15px);
+  bottom: 0px;
+  width: 4px;
+  background: #ddd;
+}
+.timeline:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.timeline1 {
+  width: 100%;
+  max-width: 900px;
+  background: #fff;
+  margin-left:30px;
+  padding: 85px 50px;
+  position: relative;
+  box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
+}
+.timeline1:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: calc(33% + 15px);
+  bottom: 0px;
+  width: 4px;
+  background: #ddd;
+}
+.timeline1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.entry {
+  clear: both;
+  text-align: left;
+  position: relative;
+}
+.entry .title {
+  margin-bottom: .5em;
+  float: left;
+  width: 33%;
+  padding-right: 30px;
+  text-align: right;
+  position: relative;
+}
+.entry .title:before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 4px solid salmon;
+  background-color: #fff;
+  border-radius: 100%;
+  top: 15%;
+  right: -8px;
+  z-index: 99;
+}
+.entry .title h3 {
+  margin: 0;
+  font-size: 120%;
+}
+.entry .title p {
+  margin: 0;
+  font-size: 100%;
+}
+.entry .body {
+  margin: 0 0 3em;
+  float: right;
+  width: 66%;
+  padding-left: 30px;
+}
+.entry .body p {
+  line-height: 1.4em;
+}
+.entry .body p:first-child {
+  margin-top: 0;
+  font-weight: 400;
+}
+.entry .body ul {
+  color: #aaa;
+  padding-left: 0;
+  list-style-type: none;
+}
+.entry .body ul li:before {
+  content: "–";
+  margin-right: .5em;
 }
