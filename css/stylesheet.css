@@ -544,7 +544,6 @@ footer {
 }
 
 .social {
-    padding: 10px 0 10px 10px;
     width: 100%;
 }
 
@@ -787,7 +786,7 @@ footer {
         margin-bottom: 0
     }
     .social {
-        padding: 20px 20px;
+        padding: 0px 20px;
         max-width: 300px;
         margin: 0 auto;
         text-align: center
